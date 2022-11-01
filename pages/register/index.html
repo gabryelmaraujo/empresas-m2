@@ -9,11 +9,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/globalStyles.css">
 
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/pages/register/index.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    <link rel="stylesheet" href="/styles/anchor.css">
+    <link rel="stylesheet" href="/styles/lists.css">
+    <link rel="stylesheet" href="/styles/form.css">
+
+
+
+    <title>Kenzie Empresas - Cadastro</title>
 </head>
 <body>
+    <header>
+        <nav class="menuNav">
+            <div class="logoHeader">
+                <img src="/images/Ellipse 1.svg" alt="" class="logoElipse">
+                <h1 class="logoText">Kenzie Empresas</h1>
+            </div>
+            <div class="navButtons">
+                <button id="navBttnOpen">
+                    <img src="/images/navbttn.svg" alt="" class="navBttnOpen">
+                </button>
+                <button id="navBttnClose"  class="hide">
+                    <img src="/images/closebttn.svg" alt="" class="navBttnClose">
+                </button>
+            </div>
+            <!-- ADD CLASS selectPage quando clicar no botão na versão mobile -->
+            <div class="selectPageHide">
+                <a href="/pages/login/index.html" class="toLoginAnchor">Login</a>
+                <a href="/pages/register/index.html" class="toRegisterAnchor">Cadastrar</a>
+            </div>
+
+        </nav>
+    </header>
+    <main class="mainBackImg">
+        <section class="rpContainer">
+            <section class="formSection">
+                <div class="registerTitle">
+                    <p>Cadastre-se</p>
+                </div>
+                <form class="registerForm">
+                    <input type="text" name="usernameInput" id="usernameInput" placeholder="Seu nome" required>
+                    <input type="email" name="userEmailInput" id="userEmailInput" placeholder="Seu e-mail" required>
+                    <input type="password" name="userPassInput" id="userPassInput" placeholder="Sua senha" required>
+                    <select name="nivelProfSelect" id="nivelProfSelect" required>
+                        <option value="" disabled selected class="selectText">Nivel profissional</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Pleno">Pleno</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                    <button id="registerBttn">Cadastre-se</button>
+                    <a href="/index.html" class="returnAnchor">Retornar</a>
+                </form>
+            </section>
+        </section>
+    </main>
     
 </body>
 </html>
