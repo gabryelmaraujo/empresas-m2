@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/texts.css">
     <link rel="stylesheet" href="/styles/anchor.css">
     <link rel="stylesheet" href="/styles/lists.css">
+    <link rel="stylesheet" href="/styles/form.css">
 
 
 
@@ -45,7 +46,26 @@
         </nav>
     </header>
     <main class="mainBackImg">
-        <section class="rpContainer"></section>
+        <section class="rpContainer">
+            <section class="formSection">
+                <div class="registerTitle">
+                    <p>Cadastre-se</p>
+                </div>
+                <form class="registerForm">
+                    <input type="text" name="usernameInput" id="usernameInput" placeholder="Seu nome" required>
+                    <input type="email" name="userEmailInput" id="userEmailInput" placeholder="Seu e-mail" required>
+                    <input type="password" name="userPassInput" id="userPassInput" placeholder="Sua senha" required>
+                    <select name="nivelProfSelect" id="nivelProfSelect" required>
+                        <option value="" disabled selected class="selectText">Nivel profissional</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Pleno">Pleno</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                    <button id="registerBttn">Cadastre-se</button>
+                    <a href="/index.html" class="returnAnchor">Retornar</a>
+                </form>
+            </section>
+        </section>
     </main>
     
 </body>

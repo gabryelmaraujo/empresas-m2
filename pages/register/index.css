@@ -6,7 +6,7 @@
         align-items: center;
         flex-wrap: wrap;
 
-        width: 100%;
+        max-width: 100%;
     }
 
     .selectPageHide{
@@ -43,7 +43,14 @@
 
         padding: 0 10px;
     }
+
+    .mainBackImg{
+        background-image: url("/images/backgroundimg.svg");
+        height: 612px;
+    }
 }
+
+
 @media (min-width: 700px) {
     .container{
         max-width: 72.5em;
@@ -68,19 +75,10 @@
     .logoElipse{
         margin-right: 0.625em;
     }
-}
 
-@media (max-width: 700px){
-    .mainBackImg{
-        background-image: url("/images/backgroundimg.svg");
-        height: 612px;
-    }
-}
-
-
-@media (min-width: 700px){
     .mainBackImg{
         background-image: url("/images/backgroundimg.svg");
         height: 944px;
     }
 }
+
