@@ -10,6 +10,10 @@
         width: 100%;
     }
 
+    .selectPageHide{
+        display: none;
+    }
+
     .selectPage{
         display: flex;
         justify-content: space-evenly;
@@ -55,7 +59,9 @@
         align-items: center;
         flex-wrap: wrap;
 
-        width: 100%;
+        width: 72.5em;
+        margin: 0 auto;
+        margin-bottom: 45px;
     }
 
     .logoHeader{
