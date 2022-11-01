@@ -1,0 +1,38 @@
+
+*{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+:root{
+
+    --font-s-1: 40px;
+    --font-s-2: 32px;
+    --font-s-3: 28px;
+    --font-s-4: 24px;
+    --font-s-5: 20px;
+    --font-s-6: 18px;
+    --font-s-7: 16px;
+    --font-s-8: 14px
+
+    --font-w-1: 700;
+    --font-w-2: 600;
+    --font-w-3: 500;
+    --font-w-4: 400;
+
+    --color-brand-1: #4200FF;
+    --black: #000000;
+    --black-05: rgba(0,0,0,0.5);
+    --black-03: rgba(0,0,0,0.3);
+    --white: #FFFFFF;
+    --alert: #CE4646;
+    --success: #4BA036;
+
+
+
+}
