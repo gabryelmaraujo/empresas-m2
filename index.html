@@ -10,10 +10,117 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/pages/homepage/index.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    <link rel="stylesheet" href="/styles/anchor.css">
+    <link rel="stylesheet" href="/styles/lists.css">
 
-    <title>Document</title>
+
+    <title>Kenzie Empresas</title>
 </head>
 <body>
+    <header>
+        <nav class="menuNav">
+            <div class="logoHeader">
+                <img src="/images/Ellipse 1.svg" alt="" class="logoElipse">
+                <h1 class="logoText">Kenzie Empresas</h1>
+            </div>
+            <div class="navButtons">
+                <button id="navBttnOpen">
+                    <img src="/images/navbttn.svg" alt="" class="navBttnOpen">
+                </button>
+                <button id="navBttnClose"  class="hide">
+                    <img src="/images/closebttn.svg" alt="" class="navBttnClose">
+                </button>
+            </div>
+            <!-- ADD CLASS selectPage quando clicar no botão -->
+            <div class="hide">
+                <a href="/pages/login/index.html" class="toLoginAnchor">Login</a>
+                <a href="/pages/register/index.html" class="toRegisterAnchor">Cadastrar</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="homePageBanner">
+            <img src="/images/homepagebanner.svg" alt="" class="homePageBanner">
+        </section>
+
+        <section class="setoresSection">
+            <section class="closedFilter">
+                <div class="sectorFilter">
+                    <p class="sFilterText">Selecionar Setor</p>
+                </div>
+                <div class="sFilterBttns">
+                    <button id="sFilterOpen">
+                        <img src="/images/openfilterbttnteste.png" alt="" class="filterOpenImg">
+                    </button>
+                    <button id="sFilterClose" class="hide">
+                        <img src="/images/closebttn.svg" alt="">
+                    </button>
+                </div>
+            </section>
+
+            <div class="sFilterOpen hide">
+                <ul class="sFilterList">
+                    <li id="selectSector" class="selectedSector">Setor 1</li>
+                    <li id="selectSector">Setor 2</li>
+                    <li id="selectSector">Setor 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="enterprisesSection">
+            <ul class="enterprisesList">
+                <li id="enterpriseLi">
+                    <h2 id="enterpriseName">Nome da empresa</h2>
+                    <p id="workTime">10 horas</p>
+                    <div class="jobSector">
+                        <p>Sector</p>
+                    </div>
+                </li>
+                <li id="enterpriseLi">
+                    <h2 id="enterpriseName">Nome da empresa</h2>
+                    <p id="workTime">10 horas</p>
+                    <div class="jobSector">
+                        <p>Sector</p>
+                    </div> 
+                </li>
+                <li id="enterpriseLi">
+                    <h2 id="enterpriseName">Nome da empresa</h2>
+                    <p id="workTime">10 horas</p>
+                    <div class="jobSector">
+                        <p>Sector</p>
+                    </div>
+                </li>
+                <!-- <li id="enterpriseLi">
+                    <h2 id="enterpriseName">Nome da empresa</h2>
+                    <p id="workTime">10 horas</p>
+                    <div class="jobSector">
+                        <p>Sector</p>
+                    </div>
+                </li>
+                <li id="enterpriseLi">
+                    <h2 id="enterpriseName">Nome da empresa</h2>
+                    <p id="workTime">10 horas</p>
+                    <div class="jobSector">
+                        <p>Sector</p>
+                    </div> 
+                </li>
+                <li id="enterpriseLi">
+                    <h2 id="enterpriseName">Nome da empresa</h2>
+                    <p id="workTime">10 horas</p>
+                    <div class="jobSector">
+                        <p>Sector</p>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+
+    </main>
     
 </body>
 </html>

@@ -3,6 +3,7 @@
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     list-style: none;
+    
 }
 
 button, a{
@@ -18,7 +19,7 @@ button, a{
     --font-s-5: 20px;
     --font-s-6: 18px;
     --font-s-7: 16px;
-    --font-s-8: 14px
+    --font-s-8: 14px;
 
     --font-w-1: 700;
     --font-w-2: 600;
@@ -26,6 +27,7 @@ button, a{
     --font-w-4: 400;
 
     --color-brand-1: #4200FF;
+    --color-brand-2: #120044;
     --black: #000000;
     --black-05: rgba(0,0,0,0.5);
     --black-03: rgba(0,0,0,0.3);
@@ -35,4 +37,13 @@ button, a{
 
 
 
+}
+
+.hide{
+    display: none;
+}
+
+.filterOpenImg{
+    width: 20px;
+    height: 20px;
 }

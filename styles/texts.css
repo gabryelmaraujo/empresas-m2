@@ -1,0 +1,31 @@
+
+h1{
+    font-size: var(--font-s-5);
+    font-weight: var(--font-w-1);
+
+}
+
+.sFilterText{
+    font-size: var(--font-s-6);
+    font-weight: var(--font-w-4);
+}
+
+#enterpriseName{
+    font-size: var(--font-s-5);
+    font-weight: var(--font-w-1);
+    margin-bottom: 70px;
+    width: 241px;
+}
+
+.jobSector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-brand-1);
+    border-radius: 255px;
+    
+    width: 73px;
+    height: 32px;
+    margin-bottom: 30px;
+}
