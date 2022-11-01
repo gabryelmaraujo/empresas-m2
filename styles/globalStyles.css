@@ -47,3 +47,16 @@ button, a{
     width: 20px;
     height: 20px;
 }
+
+.enterprisesList::-webkit-scrollbar {
+    width: 0px;
+}
+  
+.enterprisesList::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+  
+.enterprisesList::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);          
+    border: 0px;
+}

@@ -15,7 +15,11 @@
     transform: rotate(90deg);
 }
 
-.sFilterBttns{
-    margin-left: 5.625em;
+@media (max-width: 700px){
+    .sFilterBttns{
+        margin-left: 5.625em;
+    }
 }
+
+
 
