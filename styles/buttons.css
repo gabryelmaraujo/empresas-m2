@@ -37,4 +37,23 @@
     border: 1px solid var(--color-brand-1);
     color: var(--color-brand-1);
     padding: 13px 36px;
+    font-size: var(--font-s-6);
+    font-weight: var(--font-w-1);
+}
+
+/* ADMIN PAGE */
+#viewDeptBttn, #editDeptBttn, #delDeptBttn, #editUserBttn, #delUserBttn {
+    border: none;
+
+}
+
+.viewDeptBttnImg, .editDeptBttnImg, .delDeptBttnImg, .editUserBttnImg, .delUserBttnImg {
+    width: 38px;
+    height: 33px;
+}
+
+.deptBttns, .userBttns{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }

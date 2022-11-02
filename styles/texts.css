@@ -55,3 +55,21 @@ h1{
 }
 
 
+.deptsTitle, .usersTitle{
+    font-size: var(--font-s-2);
+    font-weight: var(--font-w-1);
+}
+
+.deptName,  .userName{
+    font-size: var(--font-s-5);
+    font-weight: var(--font-w-1);
+}
+.deptDesc, .deptCompany, .userLevel, .userCompany{
+    font-size: var(--font-s-6);
+    font-weight: var(--font-w-4);
+}
+
+.userTitleDiv{
+    display: flex;
+    justify-content: center;
+}
