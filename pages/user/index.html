@@ -10,10 +10,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/pages/user/index.css">
 
-    <title>Document</title>
+
+    <title>Kenzie Empresas</title>
 </head>
 <body>
+    <header class="upHeader">
+        <nav class="upNav">
+            <div class="logoHeader">
+                <img src="/images/Ellipse 1.svg" alt="" class="logoElipse">
+                <h1 class="logoText">Kenzie Empresas</h1>
+            </div>
+            <button class="logoutBttn">Logout</button>
+        </nav>
+    </header>
+    <main class="upMain">
+        <section class="upContainer">
+            <section class="userSection">
+                <div class="userInfos">
+                    <div class="userName">USERNAME</div>
+                    <div class="userDesc">
+                        <p class="userEmail">email@mail.com</p>
+                        <p class="userLevel">Senior</p>
+                        <p class="jobType">Home Office</p>
+                    </div>
+                </div>
+
+                <button class="editUserBttn">
+                    <img src="/images/editbttnhover.svg" alt="">
+                </button>
+            </section>
+            <section class="companySection">
+                <!-- <div class="companyName">
+                    <p class="deptName">Company name - Dept name</p>
+                </div>
+                <div class="partnersDiv">
+                    <ul class="partnersList">
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        <li class="partnerInfo">
+                            <p class="partnerName">Nome do colega</p>
+                            <p class="partnerLevel">Senior</p>
+                        </li>
+
+                        
+                        
+                    </ul>
+                </div> -->
+                <section class="notHiredSection">
+                    <p class="notHiredText">
+                        Você ainda não foi contratado
+                    </p>
+                </section>
+            </section>
+        </section>
+
+        <section class="modalSection hide">
+            <section class="editUserModalContainer">
+                <section class="editUserModal">
+                    <div class="closeModal">
+                        <button>
+                            <img src="/images/closebttn.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="modalTitle">
+                        <p>Editar perfil</p>
+                    </div>
+                    <div class="editFormDiv">
+                        <form class="editForm">
+                            <input type="text" name="newUsername" id="newUsername" placeholder="Seu nome">
+                            <input type="email" name="newEmail" id="newEmail" placeholder="Seu e-mail">
+                            <input type="password" name="newPass" id="newPass" placeholder="Sua senha">
+                            <button id="editUserBttn">Editar perfil</button>
+                        </form>
+                    </div>
+                </section>
+                
+                
+            </section>
+        </section>
+    </main>
     
 </body>
 </html>
