@@ -54,3 +54,58 @@
         justify-content: center;
     }
 }
+
+@media (min-width: 700px){
+
+    .lpContainer{
+        background-color: var(--black-03);
+        height: 100%;
+    }
+
+    .loginFormSection{
+        padding: 39px 42px;
+
+    }
+
+    .loginFormTitle{
+        font-size: var(--font-s-2);
+        font-weight: var(--font-w-1);
+    }
+
+    .loginFormDesc{
+        font-size: var(--font-s-7);
+    }
+
+    #loginForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input{
+        width: 92%;
+        height: 52px;
+        margin-bottom: 13px;
+        padding: 0 19px;
+    }
+
+    #loginBttn{
+        width: 100%;
+        height: 48px;
+        background-color: var(--color-brand-1);
+        border: 1px solid var(--color-brand-1);
+        color: var(--white);
+        font-size: var(--font-s-6);
+        font-weight: var(--font-w-1);
+    }
+
+    .returnAnchor{
+        width: 100%;
+        height: 48px;
+        border: 1px solid var(--color-brand-1);
+        color: var(--color-brand-1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -51,3 +51,41 @@
     }
 
 }
+
+
+@media (min-width: 700px){
+    .menuNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 72.5em;
+        margin: 0 auto;
+    }
+
+    .logoHeader{
+        display: flex;
+    }
+
+    .logoElipse{
+        margin-right: 0.625em;
+    }
+    
+    .lpMain{
+        background-image: url("/images/backgroundimg.svg");
+        height: 944px;
+    }
+
+    .lpContainer{
+        overflow: auto;
+    }
+
+    .loginFormSection{
+        background-color: var(--white);
+        width: 31.625em;
+        height: 489px;
+        margin: 10% auto;
+    }
+
+}
