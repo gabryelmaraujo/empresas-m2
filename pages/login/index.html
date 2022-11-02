@@ -10,10 +10,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/pages/login/index.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    <link rel="stylesheet" href="/styles/anchor.css">
+    <link rel="stylesheet" href="/styles/lists.css">
+    <link rel="stylesheet" href="/styles/loginForm.css">
 
-    <title>Document</title>
+
+
+    <title>Kenzie Empresas - Login</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="menuNav">
+            <div class="logoHeader">
+                <img src="/images/Ellipse 1.svg" alt="" class="logoElipse">
+                <h1 class="logoText">Kenzie Empresas</h1>
+            </div>
+            <div class="navButtons">
+                <button id="navBttnOpen">
+                    <img src="/images/navbttn.svg" alt="" class="navBttnOpen">
+                </button>
+                <button id="navBttnClose"  class="hide">
+                    <img src="/images/closebttn.svg" alt="" class="navBttnClose">
+                </button>
+            </div>
+            <!-- ADD CLASS selectPage quando clicar no botão na versão mobile -->
+            <div class="selectPageHide">
+                <a href="/index.html" class="toLoginAnchor">Home</a>
+                <a href="/pages/register/index.html" class="toRegisterAnchor">Cadastrar</a>
+            </div>
+
+        </nav>
+    </header>
+    <main class="lpMain">
+        <section class="lpContainer">
+            <section class="loginFormSection">
+                <p class="loginFormTitle">Login</p>
+                <p class="loginFormDesc">Preencha os campos para realizar login</p>
+                <form id="loginForm">
+                    <input type="email" name="loginEmail" id="loginEmail" placeholder="Seu e-mail" required>
+                    <input type="password" name="loginPass" id="loginPass" placeholder="Sua senha">
+                    <button id="loginBttn">Login</button>
+                    <p>ou</p>
+                    <a href="/pages/register/index.html" class="returnAnchor">Cadastre-se</a>
+                </form>
+            </section>
+
+        </section>
+
+
+    </main>
+
+
 </body>
 </html>
