@@ -1,0 +1,53 @@
+
+
+@media (max-width:700px) {
+    
+    .menuNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+
+    .selectPageHide{
+        display: none;
+    }
+
+    .selectPage{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 30px;
+        border-bottom: 1px var(--black-03) solid;
+        padding-bottom: 21px;
+    }
+
+    .logoHeader{
+        display: flex;
+        margin-right: 34%;;
+    }
+    
+    .logoElipse{
+        margin-right: 0.625em;
+    }
+
+    .closedFilter{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 0 10px;
+    }
+
+    .lpMain{
+        background-image: url("/images/backgroundimg.svg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 612px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+}
