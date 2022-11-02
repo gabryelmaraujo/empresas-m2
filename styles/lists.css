@@ -32,3 +32,20 @@
     
     }
 }
+
+
+.deptsUl, .usersUl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 380px;
+    overflow: auto;
+}
+
+.deptLi, .userLi{
+    border-bottom: 1px solid var(--color-brand-1);
+    width: 429px;
+    height: 196px;
+    padding: 18px 29px;
+    margin-bottom: 28px;
+}

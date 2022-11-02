@@ -10,10 +10,276 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/pages/admin/index.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    <link rel="stylesheet" href="/styles/lists.css">
+    <link rel="stylesheet" href="/styles/scroll.css">
+    <link rel="stylesheet" href="/styles/modal.css">
 
-    <title>Document</title>
+
+    <title>Kenzie Empresas - User page</title>
 </head>
 <body>
+    <header>
+        <nav class="apNav">
+            <div class="logoHeader">
+                <img src="/images/Ellipse 1.svg" alt="" class="logoElipse">
+                <h1 class="logoText">Kenzie Empresas</h1>
+            </div>
+            <button class="logoutBttn">Logout</button>
+        </nav>
+    </header>
+    <main class="apMain">
+        <section class="deptsSection">
+            <div class="deptsTitleDiv">
+                <p class="deptsTitle">Departamentos</p>
+                <select name="selectCompany" id="selectCompany">
+                    <option value="" disabled selected>Selecionar Empresa</option>
+                    <option value="company">company 1</option>
+                    <option value="company">company 2</option>
+                    <option value="company">company 3</option>
+                </select>
+                <button id="addDeptBttn">
+                    <img src="/images/addbttn.svg" alt="" class="addBttnImg">
+                    <p>Criar</p>
+                </button>
+            </div>
+            <div class="deptsBox">
+                <ul class="deptsUl">
+                    <li class="deptLi">
+                        <p class="deptName">
+                            Departamento
+                        </p>
+                        <p class="deptDesc">
+                            Dept descrição
+                        </p>
+                        <p class="deptCompany">
+                            Company name
+                        </p>
+                        <div class="deptBttns">
+                            <button id="viewDeptBttn">
+                                <img src="/images/viewbttn.svg" alt="Ver informações do departamento" class="viewDeptBttnImg">
+                            </button>
+                            <button id="editDeptBttn">
+                                <img src="/images/editbttn.svg" alt="Editar departamento" class="editDeptBttnImg">
+                            </button>
+                            <button id="delDeptBttn">
+                                <img src="/images/trashbttn.svg" alt="Deletar departamento"
+                                class="delDeptBttnImg">
+                            </button>
+                            
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+        <section class="usersSection">
+            <div class="userTitleDiv">
+                <p class="usersTitle">
+                    Usuários cadastrados
+                </p>
+            </div>
+            <div class="usersBox">
+                <ul class="usersUl">
+                    <li class="userLi">
+                        <p class="userName">
+                            Username
+                        </p>
+                        <p class="userLevel">
+                            Senior
+                        </p>
+                        <p class="userCompany">
+                            Company name
+                        </p>
+                        <div class="userBttns">
+                            <button id="editUserBttn">
+                                <img src="/images/editbttnHover.svg" alt="" class="editUserBttnImg">
+                            </button>
+                            <button id="delUserBttn">
+                                <img src="/images/trashbttn.svg" alt="" class="delUserBttnImg">
+                            </button>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="modalsSection">
+            <!-- <section class="viewDeptModal">
+                <section class="viewContainer">
+                    <header class="viewModalHeader">
+                        <p class="deptNameModal">
+                            Nome do departamento
+                        </p>
+                        <button id="closeModalBttn">
+                            <img src="/images/closebttn.svg" alt="">
+                        </button>
+                    </header>
+                    <div class="deptInfosModalDiv">
+                        <div class="deptDescDiv">
+                            <p class="deptDesc">
+                                Descrição do dept
+                            </p>
+                            <p class="deptComp">
+                                Empresa
+                            </p>
+                        </div>
+                        <div class="searchUser">
+                            <select name="selectUserModal" id="selectUserModal">
+                                <option value="" selected disabled>
+                                    Selecionar usuário
+                                </option>
+                                <option value="deptUser">user 1</option>
+                            </select>
+                            <button id="hireUserBttn">
+                                Contratar
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="modalMain">
+                        <ul class="modalUsersUl">
+                            <li class="modalUserLi">
+                                <p class="usernameModal">
+                                    Username
+                                </p>
+                                <p class="userLevelModal">
+                                    Senior
+                                </p>
+                                <p class="companyModal">
+                                    Company
+                                </p>
+                                <div class="dismissBttnDiv">
+                                    <button class="dismissBttn">
+                                        Desligar
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+            </section> -->
+            <!-- <section class="createDeptModal">
+                <section class="createDeptContainer">
+                    <div class="cdmodalHeader">
+                        <p class="cdmodalTitle">
+                            Criar Departamento
+                        </p>
+                        <button id="closeModalBttn">
+                            <img src="/images/closebttn.svg" alt="">
+                        </button>
+                    </div>
+                    <main class="cdmodalMain">
+                        <form id="cdmodalForm">
+                            <input type="text" name="newDeptName" id="newDeptName" placeholder="Nome do departamento">
+                            <input type="text" name="newDeptDesc" id="newDeptDesc" placeholder="Descrição">
+                            <select name="newDeptCompanies" id="newDeptCompanies">
+                                <option value="" selected disabled>Selecionar a empresa</option>
+                                <option value="company"> company 1</option>
+                            </select>
+                            <button id="createDeptBttn">
+                                Criar o departamento
+                            </button>
+                        </form>
+                    </main>
+                </section>
+
+            </section> -->
+            <!-- <section class="editDeptModal">
+                <section class="editDeptContainer">
+                    <div class="edmodalHeader">
+                        <p class="edmTitle">Editar departamento</p>
+                        <button id="closeModalBttn">
+                            <img src="/images/closebttn.svg" alt="">
+                        </button>
+                    </div>
+                    <main class="edmMain">
+                        <form  id="edmForm">
+                            <textarea name="newDescDept" id="newDescDept" cols="30" rows="10" >Valores anteriores</textarea>
+                            <button id="editBttn">
+                                Salvar alterações
+                            </button>
+                        </form>
+
+                    </main>
+                </section>
+            </section> -->
+            <!-- <section class="delDeptModal">
+                <section class="delDeptContainer">
+                    <header class="ddmHeader">
+                        <button id="closeModalBttn">
+                            <img src="/images/closebttn.svg" alt="">
+                        </button>
+                    </header>
+                    <p class="modalParag">
+                        Realmente deseja deletar o Departamento NOME e demitir seus funcionários?
+                    </p>
+                    <div class="ddmBttnDiv">
+                        <button id="deletDeptBttn">Confirmar</button>
+                    </div>
+
+                </section>
+            </section> -->
+            <!-- <section class="editEmployeeModal">
+                <section class="editEmployeeModalContainer">
+                    <header class="edeModalHeader">
+                        <p class="edeModalTitle">
+                            Editar usuário
+                        </p>
+                        <button id="closeModalBttn">
+                            <img src="/images/closebttn.svg" alt="">
+                        </button>
+                    </header>
+                    <main class="edeModalMain">
+                        <form action="" id="edeModalForm">
+                            <select name="workTypeSelect" id="workTypeSelect">
+                                <option value="" selected disabled>Selecionar modalidade de trabalho</option>
+                                <option value="workType">Híbrido</option>
+                                <option value="workType">Remoto</option>
+                                <option value="workType">Presencial</option>
+                            </select>
+                            <select name="userLvlSelect" id="userLvlSelect">
+                                <option value="" selected disabled>Selecionar nível profissional</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Pleno">Pleno</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                            <button id="editUserSubmit">
+                                Editar
+                            </button>
+                        </form>
+                    </main>
+                </section>
+            </section> -->
+            <!-- <section class="delEmployeeModal">
+                <section class="delEmployeeModalContainer">
+                    <header class="deleModalHeader">
+                        <button id="closeModalBttn">
+                            <img src="/images/closebttn.svg" alt="">
+                        </button>
+                    </header>
+                    <main class="deleModalMain">
+                        <p class="deleModalParag">
+                            Realmente deseja remover o usuário NOME?
+                        </p>
+                        <button id="delEmployeeBttn">
+                            Deletar
+                        </button>
+                    </main>
+
+                </section>
+            </section> -->
+
+
+        </section>
+    </main>
     
 </body>
 </html>

@@ -1,0 +1,37 @@
+
+.apMain{
+    margin-top: 100px;
+}
+
+.deptsSection, .usersSection{
+    width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+}
+
+.deptsTitleDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#selectCompany{
+    width: 282px;
+    padding: 0 33px;
+    border-radius: 15px;
+}
+
+#addDeptBttn{
+    display: flex;
+    width: 150px;
+    background-color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);
+    color: var(--white);
+    align-items: center;
+    padding: 0 10px;
+}
+
+.addBttnImg{
+    margin-right: 30px;
+}
