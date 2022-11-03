@@ -10,7 +10,7 @@ const formElements = Array.from(selectForm.elements)
 
 const selectCompany = formElements[0]
 const companies = await companiesInfos()
-console.log(selectCompany)
+
 
 companies.forEach((e)=>{
     const companyName = e.name
