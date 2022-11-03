@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-#selectSector{
+.selectSector{
     display: flex;
     align-items: center;
 
