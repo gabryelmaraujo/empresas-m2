@@ -35,12 +35,17 @@
         <section class="deptsSection">
             <div class="deptsTitleDiv">
                 <p class="deptsTitle">Departamentos</p>
-                <select name="selectCompany" id="selectCompany">
-                    <option value="" disabled selected>Selecionar Empresa</option>
-                    <option value="company">company 1</option>
-                    <option value="company">company 2</option>
-                    <option value="company">company 3</option>
-                </select>
+                <form id="selectForm">
+
+                    <select name="selectCompany" id="selectCompany">
+                        <option value="" disabled selected>Selecionar Empresa</option>
+                        <!-- <option value="company">company 1</option>
+                        <option value="company">company 2</option>
+                        <option value="company">company 3</option> -->
+                    </select>
+
+                </form>
+                
                 <button id="addDeptBttn">
                     <img src="/images/addbttn.svg" alt="" class="addBttnImg">
                     <p>Criar</p>
@@ -102,6 +107,12 @@
                             <button id="delUserBttn">
                                 <img src="/images/trashbttn.svg" alt="" class="delUserBttnImg">
                             </button>
+
+                        </div>
+                        <div id="userInfos" class="hide">
+                            <p class="userId"></p>
+                            <p class="userDept"></p>
+                            <p class="userWorkType"></p>
 
                         </div>
                     </li> -->

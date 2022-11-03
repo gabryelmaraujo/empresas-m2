@@ -14,7 +14,6 @@ const renderAllUsers = async () => {
     })
 
     const users = await renderUsers.json()
-    console.log(users)
 
     const usersList = document.querySelector(".usersUl")
     usersList.innerHTML=''
