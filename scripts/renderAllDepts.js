@@ -15,7 +15,9 @@ const renderDepts = await fetch( allDeptsUrl, {
 } )
 
 const depts = await renderDepts.json()
-console.log(depts)
+const deptsList = document.querySelector('.deptsUl')
+deptsList.innerHTML=''
+
 
 depts.forEach((e)=>{
 
@@ -25,7 +27,7 @@ depts.forEach((e)=>{
     const companyId = e.companies.uuid
     const companyName = e.companies.name
 
-    const deptsList = document.querySelector('.deptsUl')
+
 
     deptsList.insertAdjacentHTML('afterbegin', `
     
