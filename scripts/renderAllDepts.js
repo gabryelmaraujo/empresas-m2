@@ -31,7 +31,7 @@ depts.forEach((e)=>{
 
     deptsList.insertAdjacentHTML('afterbegin', `
     
-        <li class="deptLi">
+        <li class="deptLi" id="${deptId}">
             <p class="deptName">
                 ${deptName}
             </p>
