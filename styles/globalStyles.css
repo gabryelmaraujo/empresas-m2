@@ -52,6 +52,11 @@ button, a{
     height: 20px;
 }
 
+.filterCloseImg{
+    rotate: 180deg;
+    transition: all 0.5s;
+}
+
 .enterprisesList::-webkit-scrollbar {
     width: 0px;
 }

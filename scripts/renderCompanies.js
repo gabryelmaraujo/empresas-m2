@@ -7,13 +7,13 @@ const renderCompanies = async () => {
     } )
 
     const renderResponse = await render.json()
-    console.log(renderResponse) 
 
     renderResponse.forEach((e)=>{
         const companyId = e.uuid
         const companyName = e.name
         const comapanyOpHours = e.opening_hours
         const companySector = e.sectors.description
+        const cSectorId = e.sectors.uuid
         const companyDesc = e.description
 
         const companyList = document.querySelector(".enterprisesList")
@@ -22,7 +22,7 @@ const renderCompanies = async () => {
         <li class="enterpriseLi" id="${companyId}">
             <h2 id="enterpriseName">${companyName}</h2>
             <p id="workTime">${comapanyOpHours}</p>
-            <div class="jobSector">
+            <div class="jobSector" id="${cSectorId}">
                 <p>${companySector}</p>
             </div>
         </li>
@@ -31,5 +31,5 @@ const renderCompanies = async () => {
 
     })
 }
-renderCompanies()
-// export { renderCompanies }
+
+export { renderCompanies }

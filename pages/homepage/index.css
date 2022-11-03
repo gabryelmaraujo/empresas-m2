@@ -79,6 +79,8 @@
 
     .setoresSection{
         display: flex;
+        flex-direction: column;
+        padding: 0 40px;
     }
 
     .closedFilter{
@@ -93,6 +95,8 @@
     .sFilterBttns{
         margin-left: 150px;
     }
+
+    .sFilterOpen{}
 
     .enterprisesSection{
         padding: 0 30px;
