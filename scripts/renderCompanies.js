@@ -32,4 +32,33 @@ const renderCompanies = async () => {
     })
 }
 
-export { renderCompanies }
+const companiesInfos = async () => {
+    const empresasUrl = "http://localhost:6278/companies"
+    const render = await fetch ( empresasUrl, {
+        method: "GET",
+    } )
+
+    const renderResponse = await render.json()
+    const companies = []
+    renderResponse.forEach((e)=>{
+        const company =  {
+            description: e.description,
+            name: e.name,
+            opening_hours: e.opening_hours,
+            sectors: {
+                uuid: e.sectors.uuid,
+                description: e.sectors.description
+            },
+            uuid: e.uuid
+        }
+
+        companies.push(company)
+        
+
+    })
+
+    return companies
+
+}
+
+export { renderCompanies, companiesInfos }
