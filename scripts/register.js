@@ -1,3 +1,4 @@
+import { createToastfy } from "./toastfy.js"
 
 
 const registerFunction = async () => {
@@ -33,8 +34,18 @@ registerBttn.addEventListener('click', async (e)=>{
     })
 
     const response = await createUser.json()
+    console.log(response)
     if(response.uuid){
-        window.location.href="/pages/login/index.html"
+
+        createToastfy('sucesso', 'cadastro')
+
+        setTimeout(()=>{
+            window.location.href="/pages/login/index.html"
+        }, 2000)
+
+    }
+    if(response.error){
+        createToastfy('erro', 'cadastro')
     }
 
     }catch(err){
