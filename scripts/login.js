@@ -1,3 +1,4 @@
+import { loginToastfy } from "./loginToastfy.js"
 import { userVerify } from "./userType.js"
 
 
@@ -45,7 +46,7 @@ loginBttn.addEventListener("click", async (e)=>{
            }
 
         }else{
-            console.log('erro no login')
+            loginToastfy("erro")
         }
     
 
