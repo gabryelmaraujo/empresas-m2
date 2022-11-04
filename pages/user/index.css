@@ -1,0 +1,136 @@
+
+
+.upContainer{
+    width: 1180px;
+    margin: 24px auto;
+}
+
+.userSection{
+    border: 1px solid var(--black-03);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 31px;
+    margin: 0 auto;
+}
+
+.userName{
+    font-size: var(--font-s-2);
+    font-weight: var(--font-w-1);
+}
+
+.userDesc{
+    display: flex;
+}
+
+.userEmail{
+    margin-right: 140px;
+}
+
+.userLevel{
+    margin-right: 140px;
+}
+
+.editUserBttn{
+    border: 0;
+}
+
+
+.companySection{
+    border: 1px solid var(--black-03);
+    margin-top: 54px;
+}
+
+.companyName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-brand-1);
+    color: var(--white);
+    font-size: var(--font-s-2);
+    font-weight: var(--font-w-1);
+}
+
+
+.partnersList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partnerInfo{
+    border: 1px solid var(--color-brand-1);
+    width: 280px;
+    padding: 12px 23px;
+    margin: 13px 24px;
+}
+
+.partnerName{
+    font-weight: var(--font-w-1);
+    font-size: var(--font-s-7);
+}
+
+.partnerLevel{
+    font-size: var(--font-s-7);
+}
+
+.notHiredSection{
+    height: 467px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-s-1);
+    font-weight: var(--font-w-1);
+}
+
+.editUserModalContainer{
+    position: absolute;
+    top: 0;
+    height: 120vh;
+    width: 98.78vw;
+    z-index: 3000;
+    background-color: var(--black-05);
+}
+
+.editUserModal{
+    background-color: var(--white);
+    width: 406px;
+    height: 421px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    padding: 20px 40px;
+}
+
+.closeModal{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeModal button{
+    border: none;
+}
+
+.modalTitle{
+    font-size: var(--font-s-1);
+    font-weight: var(--font-w-1);
+}
+
+.editForm input{
+    width: 91%;
+    height: 52px;
+    margin-bottom: 13px;
+    padding: 0 17px;
+}
+
+#editUserBttn{
+    width: 100%;
+    height: 52px;
+    background-color: var(--color-brand-1);
+    color: var(--white);
+    border: 1px solid var(--color-brand-1);
+}
+
+.hide {
+    display: none;
+}

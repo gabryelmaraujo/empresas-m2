@@ -1,0 +1,51 @@
+
+.sFilterList{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.selectSector{
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px;
+    height: 40px;
+}
+
+.selectedSector{
+    background-color: var(--color-brand-2);
+}
+
+
+@media (max-width: 700px){
+    .enterprisesList{
+        display: flex;
+        overflow-x: auto;
+        padding: 0;
+    }
+    
+    .enterpriseLi{
+        border-bottom: 1px solid var(--color-brand-1);
+        margin-right: 20px;
+        width: 241px;
+    
+    }
+}
+
+
+.deptsUl, .usersUl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 380px;
+    overflow: auto;
+}
+
+.deptLi, .userLi{
+    border-bottom: 1px solid var(--color-brand-1);
+    width: 429px;
+    height: 196px;
+    padding: 18px 29px;
+    margin-bottom: 28px;
+}

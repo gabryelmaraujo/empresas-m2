@@ -1,0 +1,17 @@
+
+.upNav, .apNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+    padding: 0 120px;
+}
+
+.logoHeader{
+    display: flex;
+}
+
+.logoElipse{
+    margin-right: 10px;
+}

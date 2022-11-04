@@ -1,0 +1,81 @@
+
+h1{
+    font-size: var(--font-s-5);
+    font-weight: var(--font-w-1);
+
+}
+
+.sFilterText{
+    font-size: var(--font-s-6);
+    font-weight: var(--font-w-4);
+}
+
+@media (max-width: 700px){
+    #enterpriseName{
+        font-size: var(--font-s-5);
+        font-weight: var(--font-w-1);
+        margin-bottom: 70px;
+        width: 241px;
+    }
+    .jobSector{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-brand-1);
+    
+        border: 1px solid var(--color-brand-1);
+        border-radius: 255px;
+        
+        width: 73px;
+        height: 32px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 700px){
+    #enterpriseName{
+        font-size: var(--font-s-5);
+        font-weight: var(--font-w-1);
+        margin-bottom: 14px;
+        width: 241px;
+    }
+    .jobSector{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-brand-1);
+    
+        border: 1px solid var(--color-brand-1);
+        border-radius: 255px;
+        
+        width: 93px;
+        height: 32px;
+        margin-bottom: 16px;
+        padding: 0 10px;
+    }
+}
+
+
+.deptsTitle, .usersTitle{
+    font-size: var(--font-s-2);
+    font-weight: var(--font-w-1);
+}
+
+.deptName,  .userName{
+    font-size: var(--font-s-5);
+    font-weight: var(--font-w-1);
+}
+.deptDesc, .deptCompany, .userLevel, .userCompany{
+    font-size: var(--font-s-6);
+    font-weight: var(--font-w-4);
+}
+
+.userTitleDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.selectSectorParag{
+    cursor: pointer;
+}

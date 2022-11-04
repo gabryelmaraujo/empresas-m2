@@ -1,0 +1,115 @@
+
+
+.adminEditUser{
+    z-index: 99999;
+    background-color: var(--white);
+
+    padding: 0px 20px;
+    width: 300px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    position: absolute;
+    top: 700px;
+    right: 10px;
+
+    animation: slidein 0.2s cubic-bezier(0.25, 0.45,0.45, 0.94) both;
+}
+
+.toastfyContainer{
+    z-index: 99999;
+    background-color: var(--white);
+
+    padding: 0px 20px;
+    width: 300px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    position: absolute;
+    top: 140px;
+    right: 10px;
+
+    animation: slidein 0.2s cubic-bezier(0.25, 0.45,0.45, 0.94) both;
+}
+
+@keyframes slidein{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.toastfyMain{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.toastfyIcon{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.toastfyIconImg{
+    width: 50px;
+    height: 30px;
+}
+
+.toastfyIconImgError{
+    height: 50px;
+    width: 50px;
+}
+
+.toastfyContent{
+    margin-right: 10px;
+}
+
+.toastfyText{
+    font-size: var(--font-s-8);
+}
+
+.toastfyClose{
+    display: flex;
+    align-items: center;
+}
+
+.closeToastfyBttn{
+    border: none;
+}
+
+.closeToastfyBttnImg{
+    width: 10px;
+    height: 10px;
+}
+
+.toastfyFooter{}
+
+.resultBarSuccess{
+    background-color: green;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+    animation: timing 3s forwards;
+}
+.resultBarError{
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+    animation: timing 3s forwards;
+}
+
+@keyframes timing{
+    0%{
+        width: 100%;
+    }100%{
+        width: 0;
+    }
+}

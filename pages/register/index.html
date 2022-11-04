@@ -9,11 +9,123 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/globalStyles.css">
 
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/pages/register/index.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+    <link rel="stylesheet" href="/styles/anchor.css">
+    <link rel="stylesheet" href="/styles/lists.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/toastfy.css">
+
+
+
+    <title>Kenzie Empresas - Cadastro</title>
 </head>
 <body>
+    <header>
+        <nav class="menuNav">
+            <div class="logoHeader">
+                <img src="/images/Ellipse 1.svg" alt="" class="logoElipse">
+                <h1 class="logoText">Kenzie Empresas</h1>
+            </div>
+            <div class="navButtons">
+                <button id="navBttnOpen">
+                    <img src="/images/navbttn.svg" alt="" class="navBttnOpen">
+                </button>
+                <button id="navBttnClose"  class="hide">
+                    <img src="/images/closebttn.svg" alt="" class="navBttnClose">
+                </button>
+            </div>
+            <!-- ADD CLASS selectPage quando clicar no botão na versão mobile -->
+            <div class="selectPageHide">
+                <a href="/index.html" class="toLoginAnchor">Home</a>
+                <a href="/pages/register/index.html" class="toRegisterAnchor">Cadastrar</a>
+            </div>
+
+        </nav>
+    </header>
+    <main class="mainBackImg">
+        <section class="rpContainer">
+            <section class="formSection">
+                <div class="registerTitle">
+                    <p>Cadastre-se</p>
+                </div>
+                <form class="registerForm" id="registerForm">
+                    <input type="text" name="usernameInput" id="usernameInput" placeholder="Seu nome" required>
+                    <input type="email" name="userEmailInput" id="userEmailInput" placeholder="Seu e-mail" required>
+                    <input type="password" name="userPassInput" id="userPassInput" placeholder="Sua senha" required>
+                    <select name="nivelProfSelect" id="nivelProfSelect" required>
+                        <option value="" disabled selected class="selectText">Nivel profissional</option>
+                        <option value="estágio">Estagio</option>
+                        <option value="júnior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                    <button id="registerBttn">Cadastre-se</button>
+                    <a href="/index.html" class="returnAnchor">Retornar</a>
+                </form>
+            </section>
+        </section>
+    </main>
+
+
+    <section class="toastfySection">
+        <!-- <section class="toastfySucces">
+            <div class="toastfyContainer">
+                <main class="toastfyMain">
+                    <div class="toastfyIcon">
+                        <img src="/images/toastfySucess.png" alt="" class="toastfyIconImg">
+                    </div>
+                    <div class="toastfyContent">
+                        <p class="toastfyText">
+                            Sua conta foi criada com sucesso
+                        </p>
+                    </div>
+                    <div class="toastfyClose">
+                        <button class=" closeToastfyBttn" id="closeToastfyBttn">
+                            <img src="/images/closebttn.svg" alt="" class="closeToastfyBttnImg">
+                        </button>
+                    </div>
+                </main>
+                <footer class="toastfyFooter">
+                    <div class="resultBarSuccess">
+                    </div>
+                </footer>
+            </div>
+        </section> -->
+
+        <!-- <section class="toastfyError">
+            <div class="toastfyContainer">
+                <main class="toastfyMain">
+                    <div class="toastfyIcon">
+                        <img src="/images/toastfyError.png" alt="" class="toastfyIconImgError">
+                    </div>
+                    <div class="toastfyContent">
+                        <p class="toastfyText">
+                            O e-mail já foi cadastrado
+                        </p>
+                    </div>
+                    <div class="toastfyClose">
+                        <button class=" closeToastfyBttn" id="closeToastfyBttn">
+                            <img src="/images/closebttn.svg" alt="" class="closeToastfyBttnImg">
+                        </button>
+                    </div>
+                </main>
+                <footer class="toastfyFooter">
+                    <div class="resultBarError">
+                    </div>
+                </footer>
+            </div>
+        </section> -->
+        
+
+
+    </section>
+
+
+    <script type="module" src="/pages/register/index.js"></script>
     
 </body>
 </html>

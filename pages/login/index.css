@@ -1,0 +1,91 @@
+
+
+@media (max-width:700px) {
+    
+    .menuNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+
+    .selectPageHide{
+        display: none;
+    }
+
+    .selectPage{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 30px;
+        border-bottom: 1px var(--black-03) solid;
+        padding-bottom: 21px;
+    }
+
+    .logoHeader{
+        display: flex;
+        margin-right: 34%;;
+    }
+    
+    .logoElipse{
+        margin-right: 0.625em;
+    }
+
+    .closedFilter{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 0 10px;
+    }
+
+    .lpMain{
+        background-image: url("/images/backgroundimg.svg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 612px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+@media (min-width: 700px){
+    .menuNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 72.5em;
+        margin: 0 auto;
+    }
+
+    .logoHeader{
+        display: flex;
+    }
+
+    .logoElipse{
+        margin-right: 0.625em;
+    }
+    
+    .lpMain{
+        background-image: url("/images/backgroundimg.svg");
+        height: 944px;
+    }
+
+    .lpContainer{
+        overflow: auto;
+    }
+
+    .loginFormSection{
+        background-color: var(--white);
+        width: 31.625em;
+        height: 489px;
+        margin: 10% auto;
+    }
+
+}

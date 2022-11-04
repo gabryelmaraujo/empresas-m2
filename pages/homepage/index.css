@@ -1,0 +1,116 @@
+
+@media (max-width: 700px){
+
+    .menuNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+
+    .selectPageHide{
+        display: none;
+    }
+
+    .selectPage{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 30px;
+        border-bottom: 1px var(--black-03) solid;
+        padding-bottom: 21px;
+    }
+
+
+    .homePageBanner{
+        display: none;
+    }
+
+    .logoHeader{
+        display: flex;
+        margin-right: 34%;;
+    }
+    
+    .logoElipse{
+        margin-right: 0.625em;
+    }
+
+    .closedFilter{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 700px) {
+    .container{
+        max-width: 72.5em;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menuNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 72.5em;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+
+    .logoHeader{
+        display: flex;
+    }
+
+    .logoElipse{
+        margin-right: 0.625em;
+    }
+
+
+    .homePageMain{
+        width: 34.375em;
+    }
+
+    .setoresSection{
+        display: flex;
+        flex-direction: column;
+        padding: 0 40px;
+    }
+
+    .closedFilter{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .sFilterBttns{
+        margin-left: 150px;
+    }
+
+    .sFilterOpen{}
+
+    .enterprisesSection{
+        padding: 0 30px;
+    }
+
+    .enterprisesList{
+        padding: 0;
+        overflow-y: auto;
+        max-height: 41.438em;
+
+    }
+
+    .enterpriseLi{
+        border-bottom: 1px solid var(--color-brand-1);
+    }
+}
+
