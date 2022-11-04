@@ -43,7 +43,6 @@ const editUserInfos = async () => {
 
         const form = document.getElementById("editUserForm")
         const formElements = form.elements 
-        console.log(formElements)
 
         const attBody = {
             "username": formElements[0].value,
