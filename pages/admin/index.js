@@ -9,8 +9,9 @@ import { renderAllDepts } from "../../scripts/renderAllDepts.js";
 import { renderAllUsers } from "../../scripts/renderAllUsers.js";
 import { companiesInfos } from "../../scripts/renderCompanies.js";
 import { showDept } from "../../scripts/showDept.js";
+import { validacaoLogin } from "../../scripts/validacaoLogin.js";
 
-
+validacaoLogin()
 renderAllDepts()
 renderAllUsers()
 adminCompFilter()
