@@ -1,3 +1,4 @@
+import { deleteUserToastfy } from "./deleteUserToastfy.js"
 
 
 const deleteUser = async () => {
@@ -57,7 +58,11 @@ delUserBttnArr.forEach((bttn)=>{
                         }
                     })
 
-                    window.location.reload()
+                    deleteUserToastfy('sucesso')
+                    setTimeout(()=>{
+                        window.location.reload()
+                    }, 3000)
+
 
                 }catch(err){
                     console.log(err)

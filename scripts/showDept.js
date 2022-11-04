@@ -1,3 +1,5 @@
+import { contratarUserToastfy } from "./contratarUserToastfy.js"
+import { desligarUserToastfy } from "./desligarUserToastfy.js"
 
 
 const showDept = async () => {
@@ -111,6 +113,8 @@ const showDept = async () => {
                 })
                 })
 
+                contratarUserToastfy('sucesso')
+
             })
 
             // MOSTRAR FUNCIONARIOS DO DEPARTAMENTO
@@ -180,6 +184,7 @@ const showDept = async () => {
                             }
                         })
 
+                        desligarUserToastfy('sucesso')
                         li.remove()
 
                     }catch(err){

@@ -1,3 +1,5 @@
+import { deleteDeptToastfy } from "./deleteDeptToastfy.js"
+
 
 
 const deleteDept = async () => {
@@ -54,9 +56,16 @@ delDeptButtonArr.forEach((bttn)=>{
                 headers: {
                     "Authorization": `Bearer ${admin.token}`
                 }
-            } ).then(
-                window.location.reload()
-            )
+            } )
+
+                deleteDeptToastfy('sucesso')
+                setTimeout(()=>{
+                    window.location.reload()
+                }, 3000)
+
+            
+
+
     
 
         }catch(err){
