@@ -1,4 +1,6 @@
+import { criarDeptToastfy } from "./criarDeptToastfy.js"
 import { companiesInfos } from "./renderCompanies.js"
+
 
 
 const createDept = async () => {
@@ -96,10 +98,17 @@ createDeptBttn.addEventListener("click", async (e)=>{
             } )
     
             const response = await create.json()
-            console.log(response)
 
             if(response.uuid){
-                window.location.reload()
+
+                criarDeptToastfy('sucesso')
+
+                setTimeout(()=>{
+                    window.location.reload()
+                },3000)
+
+            }else{
+                criarDeptToastfy('erro')
             }
 
     

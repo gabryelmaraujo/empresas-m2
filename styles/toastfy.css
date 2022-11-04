@@ -3,7 +3,25 @@
 
 }
 
+.adminEditUser{
+    z-index: 99999;
+    background-color: var(--white);
+
+    padding: 0px 20px;
+    width: 300px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    position: absolute;
+    top: 700px;
+    right: 10px;
+
+    animation: slidein 0.2s cubic-bezier(0.25, 0.45,0.45, 0.94) both;
+}
+
 .toastfyContainer{
+    z-index: 99999;
     background-color: var(--white);
 
     padding: 0px 20px;

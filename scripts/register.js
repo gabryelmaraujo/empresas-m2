@@ -1,4 +1,4 @@
-import { createToastfy } from "./toastfy.js"
+import { cadastroToastfy } from "./cadastroToastfy.js"
 
 
 const registerFunction = async () => {
@@ -37,7 +37,7 @@ registerBttn.addEventListener('click', async (e)=>{
     console.log(response)
     if(response.uuid){
 
-        createToastfy('sucesso', 'cadastro')
+        cadastroToastfy('sucesso')
 
         setTimeout(()=>{
             window.location.href="/pages/login/index.html"
@@ -45,7 +45,7 @@ registerBttn.addEventListener('click', async (e)=>{
 
     }
     if(response.error){
-        createToastfy('erro', 'cadastro')
+        cadastroToastfy('erro')
     }
 
     }catch(err){

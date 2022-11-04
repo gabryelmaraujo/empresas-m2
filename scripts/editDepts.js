@@ -1,3 +1,4 @@
+import { editDeptToastfy } from "./editDeptToastfy.js"
 
 
 const editDept = async () => {
@@ -72,7 +73,16 @@ const editDept = async () => {
 
                     const response = await deptInfos.json()
                     if(response.uuid){
-                        window.location.reload()
+
+                        editDeptToastfy("sucesso")
+
+                        setTimeout(()=>{
+                            window.location.reload()
+                        }, 3000)
+
+                    }else{
+                        editDeptToastfy("erro")
+
                     }
 
                 }catch(err){

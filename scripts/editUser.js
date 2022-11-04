@@ -1,3 +1,4 @@
+import { adminEditUserToastfy } from "./adminEditUserToastfy.js"
 
 const adminEditUser = async () => {
 
@@ -77,7 +78,14 @@ editUserBttnArr.forEach((bttn)=>{
 
                 const response = await editar.json()
                 if(response.uuid){
-                    window.location.reload()
+                    adminEditUserToastfy('sucesso')
+
+                    setTimeout(() => {
+                        window.location.reload()
+                    }, 3000);
+
+                }else{
+                    adminEditUserToastfy('erro')
                 }
 
             }catch(err){
