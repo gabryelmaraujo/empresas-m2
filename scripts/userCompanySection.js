@@ -26,11 +26,11 @@ const deptInfos = await renderComp.json()
 if(deptInfos !== ""){
 
     deptInfos.forEach(async (comp)=>{
-        console.log(comp)
+
         const compId = comp.company_uuid
         const deptName = comp.name 
         const deptUsersArr = comp.users
-        console.log(deptUsersArr)
+
 
         // FETCH NO COMPANY INFOS
         const companyInfosPull = await fetch("http://localhost:6278/users/departments", {
