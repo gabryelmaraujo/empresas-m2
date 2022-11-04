@@ -5,6 +5,7 @@ import { editDept } from "../../scripts/editDepts.js";
 import { renderAllDepts } from "../../scripts/renderAllDepts.js";
 import { renderAllUsers } from "../../scripts/renderAllUsers.js";
 import { companiesInfos } from "../../scripts/renderCompanies.js";
+import { showDept } from "../../scripts/showDept.js";
 
 
 renderAllDepts()
@@ -14,3 +15,4 @@ await companiesInfos()
 createDept()
 editDept()
 deleteDept()
+showDept()
