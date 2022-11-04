@@ -54,22 +54,7 @@ const showDept = async () => {
                         </div>
                         <div class="modalMain">
                             <ul class="modalUsersUl">
-                                <li class="modalUserLi">
-                                    <p class="usernameModal">
-                                        Username
-                                    </p>
-                                    <p class="userLevelModal">
-                                        Senior
-                                    </p>
-                                    <p class="companyModal">
-                                        Company
-                                    </p>
-                                    <div class="dismissBttnDiv">
-                                        <button class="dismissBttn">
-                                            Desligar
-                                        </button>
-                                    </div>
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -113,7 +98,6 @@ const showDept = async () => {
             const selectUser = document.getElementById("selectUserModal")
             const contratarBttn = document.getElementById("hireUserBttn")
             contratarBttn.addEventListener("click", async ()=>{
-                console.log(selectUser.value)
 
                 const hire = await fetch("http://localhost:6278/departments/hire/", {
                 method: "PATCH",
@@ -132,7 +116,80 @@ const showDept = async () => {
             // MOSTRAR FUNCIONARIOS DO DEPARTAMENTO
 
             const funcLista = document.querySelector(".modalUsersUl")
-            console.log(funcLista)
+
+            const funcionarios = await fetch("http://localhost:6278/users", {
+                method: "GET",
+                headers: {
+                    "Authorization": `Bearer ${admin.token}`
+                }
+            })
+
+            const funcionariosArr = await funcionarios.json()
+            funcionariosArr.forEach((func)=>{
+
+                if(func.department_uuid == deptId){
+
+
+                    if(func.professional_level == 'júnior'){
+                        func.professional_level = "Junior"
+                    }else if(func.professional_level == 'sênior'){
+                        func.professional_level = 'Senior'
+                    }else if(func.professional_level == 'pleno'){
+                        func.professional_level = 'Pleno'
+                    }else if(func.professional_level == 'estágio'){
+                        func.professional_level = 'Estágio'
+                    }
+
+                    funcLista.insertAdjacentHTML("afterbegin", `
+                    
+                    <li class="modalUserLi" id="${func.uuid}">
+                        <p class="usernameModal">
+                            ${func.username}
+                        </p>
+                        <p class="userLevelModal">
+                            ${func.professional_level}
+                        </p>
+                        <p class="companyModal">
+                            ${deptCompName}
+                        </p>
+                        <div class="dismissBttnDiv">
+                            <button class="dismissBttn" id="dismissBttn">
+                                Desligar
+                            </button>
+                        </div>
+                    </li>
+                    
+                    `)
+
+                }
+            })
+
+            // DEMITIR FUNCIONÁRIO
+            const dismissBttnArr = Array.from(document.querySelectorAll("#dismissBttn"))
+
+            dismissBttnArr.forEach((bttn)=>{
+                bttn.addEventListener("click", async (e)=>{
+                    const li = bttn.parentElement.parentElement
+                    const funcId = bttn.parentElement.parentElement.id
+
+                    try{
+                        const demitir = await fetch(`http://localhost:6278/departments/dismiss/${funcId}`, {
+                            method: "PATCH",
+                            headers: {
+                                "Authorization": `Bearer ${admin.token}`
+                            }
+                        })
+
+                        li.remove()
+
+                    }catch(err){
+                        console.log(err)
+                    }
+
+
+                })
+            })
+
     
         })
         
