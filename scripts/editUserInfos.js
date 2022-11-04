@@ -1,3 +1,4 @@
+import { userInfosEditToastfy } from "./userInfosEditToastfy.js"
 
 
 const editUserInfos = async () => {
@@ -72,7 +73,15 @@ const editUserInfos = async () => {
                 
 
                 if(response.uuid){
-                    window.location.reload()
+
+                    userInfosEditToastfy("sucesso")
+
+                    setTimeout(()=>{
+                        window.location.reload()
+                    },3000)
+
+                }else{
+                    userInfosEditToastfy("erro")
                 }
 
 
