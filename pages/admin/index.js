@@ -4,6 +4,7 @@ import { deleteDept } from "../../scripts/deleteDept.js";
 import { deleteUser } from "../../scripts/deleteUser.js";
 import { editDept } from "../../scripts/editDepts.js";
 import { adminEditUser } from "../../scripts/editUser.js";
+import { logoutFunction } from "../../scripts/logout.js";
 import { renderAllDepts } from "../../scripts/renderAllDepts.js";
 import { renderAllUsers } from "../../scripts/renderAllUsers.js";
 import { companiesInfos } from "../../scripts/renderCompanies.js";
@@ -20,3 +21,4 @@ deleteDept()
 showDept()
 adminEditUser()
 deleteUser()
+logoutFunction()
