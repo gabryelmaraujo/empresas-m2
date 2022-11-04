@@ -31,7 +31,7 @@ const renderAllUsers = async () => {
 
             usersList.insertAdjacentHTML("beforeend", `
             
-                <li class="userLi">
+                <li class="userLi" id="${userId}">
                     <p class="userName">
                         ${userName}
                     </p>
