@@ -1,5 +1,5 @@
 
-const deleteDeptToastfy = () => {
+const deleteDeptToastfy = (resultado) => {
 
     const toastfySection = document.querySelector(".toastfySection")
 
